@@ -7,7 +7,6 @@ use SiteGsbMed\GsbMedBundle\Entity\Famille;
 use SiteGsbMed\GsbMedBundle\Entity\Composition;
 use SiteGsbMed\GsbMedBundle\Entity\Medicament;
 
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 // Notre contrÃ´leur va utiliser l'objet Reponse, il faut donc le charger grÃ¢ce au use.
 use Symfony\Component\HttpFoundation\Response;
 
