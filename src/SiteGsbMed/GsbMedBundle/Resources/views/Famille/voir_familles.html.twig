@@ -1,0 +1,31 @@
+{% extends "SiteGsbMedGsbMedBundle::layout.html.twig" %}
+{% block title %}
+    Liste des familles - {{ parent() }}
+{% endblock %}
+{% block GsbMed_body %}
+    <table>
+        <thead>
+            <th>Identifiant</th>
+            <th>Libelle</th>
+            <th>Administration</th>
+        </thead>
+        <tbody>
+            {% for famille in liste_familles %}
+                <tr>
+                    <td>{{ famille.id }}</td>
+                    <td>{{ famille.FAMLibelle }}</td>
+                    <td>
+                        <a href ="{{ path('SiteGsbMed_modifier_famille', {'id': famille.id }) }}" class ="btn">
+                            <i class ="icon-edit" ></i>
+                            Modifier l'article
+                        </a>
+                        <a href ="{{ path('SiteGsbMed_supprimer_famille', {'id': famille.id }) }}" class ="btn">
+                            <i class ="icon-trash" ></i>
+                            Supprimer l'article
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

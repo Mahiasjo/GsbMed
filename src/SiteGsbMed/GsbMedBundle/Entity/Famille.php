@@ -26,7 +26,7 @@ class Famille
      *
      * @ORM\Column(name="FAM_Libelle", type="string", length=100)
      */
-    private $fAMLibelle;
+    private $FAMLibelle;
 
 
     /**

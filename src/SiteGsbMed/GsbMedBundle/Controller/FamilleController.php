@@ -12,13 +12,27 @@ use Symfony\Component\HttpFoundation\Response;
 
 class FamilleController extends Controller
 {
+    public function liste_famillesAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $liste_familles=$em->getRepository('SiteGsbMedGsbMedBundle:Competence')->findAll();
+        
+    }
     public function ajouter_familleAction()
     {
         
     }
-    public function modifier_familleAction()
+    public function modifier_famille_formAction($id)
     {
-        
+        $em = $this->getDoctrine()->getManager ();
+        // On récupère l'entité correspondant à l'id $id
+        $famille = $em->getRepository('SiteGsbMedGsbMedBundle:Famille')->find ($id);
+        if ($famille === null)
+        {
+            throw $this->createNotFoundException('Famille [id='.$id.'] inexistant.');
+        }
+        $em->flush();
+        return $this->render('SiteGsbMedGsbMedBundle:Famille:modifier_famille.html.twig', array('famille' => $famille));
     }
     public function supprimer_familleAction($id)
     {
