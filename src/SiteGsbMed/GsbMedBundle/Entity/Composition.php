@@ -26,7 +26,7 @@ class Composition
      *
      * @ORM\Column(name="COM_Libelle", type="string", length=100)
      */
-    private $cOMLibelle;
+    private $COMLibelle;
 
 
     /**
@@ -47,7 +47,7 @@ class Composition
      */
     public function setCOMLibelle($cOMLibelle)
     {
-        $this->cOMLibelle = $cOMLibelle;
+        $this->COMLibelle = $COMLibelle;
     
         return $this;
     }
@@ -59,6 +59,6 @@ class Composition
      */
     public function getCOMLibelle()
     {
-        return $this->cOMLibelle;
+        return $this->COMLibelle;
     }
 }

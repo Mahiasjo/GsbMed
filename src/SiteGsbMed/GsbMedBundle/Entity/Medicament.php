@@ -37,35 +37,35 @@ class Medicament
      *
      * @ORM\Column(name="MED_DepotLegal", type="string", length=50)
      */
-    private $mEDDepotLegal;
+    private $MEDDepotLegal;
 
     /**
      * @var string
      *
      * @ORM\Column(name="MED_Nomcommercial", type="string", length=50)
      */
-    private $mEDNomcommercial;
+    private $MEDNomcommercial;
 
     /**
      * @var string
      *
      * @ORM\Column(name="MED_Effets", type="string", length=100)
      */
-    private $mEDEffets;
+    private $MEDEffets;
 
     /**
      * @var string
      *
      * @ORM\Column(name="MED_ContreIndication", type="text")
      */
-    private $mEDContreIndication;
+    private $MEDContreIndication;
 
     /**
      * @var float
      *
      * @ORM\Column(name="MED_PrixEchantillon", type="float")
      */
-    private $mEDPrixEchantillon;
+    private $MEDPrixEchantillon;
 
 
     /**
@@ -79,60 +79,60 @@ class Medicament
     }
 
     /**
-     * Set mEDDepotLegal
+     * Set MEDDepotLegal
      *
-     * @param string $mEDDepotLegal
+     * @param string $MEDDepotLegal
      * @return Medicament
      */
     public function setMEDDepotLegal($mEDDepotLegal)
     {
-        $this->mEDDepotLegal = $mEDDepotLegal;
+        $this->MEDDepotLegal = $MEDDepotLegal;
     
         return $this;
     }
 
     /**
-     * Get mEDDepotLegal
+     * Get MEDDepotLegal
      *
      * @return string 
      */
     public function getMEDDepotLegal()
     {
-        return $this->mEDDepotLegal;
+        return $this->MEDDepotLegal;
     }
 
     /**
-     * Set mEDNomcommercial
+     * Set MEDNomcommercial
      *
-     * @param string $mEDNomcommercial
+     * @param string $MEDNomcommercial
      * @return Medicament
      */
     public function setMEDNomcommercial($mEDNomcommercial)
     {
-        $this->mEDNomcommercial = $mEDNomcommercial;
+        $this->MEDNomcommercial = $MEDNomcommercial;
     
         return $this;
     }
 
     /**
-     * Get mEDNomcommercial
+     * Get MEDNomcommercial
      *
      * @return string 
      */
     public function getMEDNomcommercial()
     {
-        return $this->mEDNomcommercial;
+        return $this->MEDNomcommercial;
     }
 
     /**
-     * Set mEDEffets
+     * Set MEDEffets
      *
-     * @param string $mEDEffets
+     * @param string $MEDEffets
      * @return Medicament
      */
     public function setMEDEffets($mEDEffets)
     {
-        $this->mEDEffets = $mEDEffets;
+        $this->MEDEffets = $MEDEffets;
     
         return $this;
     }
@@ -144,24 +144,24 @@ class Medicament
      */
     public function getMEDEffets()
     {
-        return $this->mEDEffets;
+        return $this->MEDEffets;
     }
 
     /**
-     * Set mEDContreIndication
+     * Set MEDContreIndication
      *
-     * @param string $mEDContreIndication
+     * @param string $MEDContreIndication
      * @return Medicament
      */
-    public function setMEDContreIndication($mEDContreIndication)
+    public function setMEDContreIndication($MEDContreIndication)
     {
-        $this->mEDContreIndication = $mEDContreIndication;
+        $this->MEDContreIndication = $MEDContreIndication;
     
         return $this;
     }
 
     /**
-     * Get mEDContreIndication
+     * Get MEDContreIndication
      *
      * @return string 
      */
@@ -171,26 +171,26 @@ class Medicament
     }
 
     /**
-     * Set mEDPrixEchantillon
+     * Set MEDPrixEchantillon
      *
-     * @param float $mEDPrixEchantillon
+     * @param float $MEDPrixEchantillon
      * @return Medicament
      */
-    public function setMEDPrixEchantillon($mEDPrixEchantillon)
+    public function setMEDPrixEchantillon($MEDPrixEchantillon)
     {
-        $this->mEDPrixEchantillon = $mEDPrixEchantillon;
+        $this->MEDPrixEchantillon = $MEDPrixEchantillon;
     
         return $this;
     }
 
     /**
-     * Get mEDPrixEchantillon
+     * Get MEDPrixEchantillon
      *
      * @return float 
      */
     public function getMEDPrixEchantillon()
     {
-        return $this->mEDPrixEchantillon;
+        return $this->MEDPrixEchantillon;
     }
     /**
      * Constructor

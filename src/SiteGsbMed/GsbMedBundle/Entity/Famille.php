@@ -47,7 +47,7 @@ class Famille
      */
     public function setFAMLibelle($fAMLibelle)
     {
-        $this->fAMLibelle = $fAMLibelle;
+        $this->FAMLibelle = $FAMLibelle;
     
         return $this;
     }
@@ -59,6 +59,6 @@ class Famille
      */
     public function getFAMLibelle()
     {
-        return $this->fAMLibelle;
+        return $this->FAMLibelle;
     }
 }
