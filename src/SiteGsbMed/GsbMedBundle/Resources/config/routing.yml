@@ -1,0 +1,19 @@
+site_gsb_med_gsb_med_homepage:
+    pattern:  /
+    defaults: { _controller: SiteGsbMedGsbMedBundle:Default:index }
+
+SiteJMAblog_ajouter_famille:
+    path: /ajouter_famille
+    defaults: {_controller: SiteGsbMedGsbMedBundle:Famille:ajouter_famille}
+
+SiteJMAblog_modifier_famille:
+    path: /modifier_famille/{id}
+    defaults: {_controller: SiteGsbMedGsbMedBundle:Famille:modifier_famille}
+    requirements:
+        id: \d+
+
+SiteJMAblog_supprimer_famille:
+    path: /supprimer_famille/{id}
+    defaults: {_controller: SiteGsbMedGsbMedBundle:Famille:supprimer_famille}
+    requirements:
+        id: \d+

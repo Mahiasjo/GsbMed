@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>modification de la composition {{ id }}</title>
+    </head>
+    <body>
+        <h1>modification de la composition : {{ id }}</h1>
+        
+        <form action="ajouter_compo_confirm.html.twig" method="post" enctype="multipart/form-data">
+        
+            <table>
+                <tr>
+                    <td>
+                        <font>Libelle de la composition: </font>
+                    </td>
+                    <td>
+                        <input type="text" name="Modif_Libelle" value="{{ composition.COMLibelle }}" size="20" />
+                    </td>
+                </tr>
+            </table>
+            
+            <input type="submit" name="ok" value="Modifier">
+            
+        </form>
+    </body>
+</html>

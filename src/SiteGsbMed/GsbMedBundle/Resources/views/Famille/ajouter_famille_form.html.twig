@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ajout de la famille {{ id }}</title>
+    </head>
+    <body>
+        <h1>Ajout de la famille : {{ id }}</h1>
+        
+        <form action="ajouter_famille_confirm.html.twig" method="post" enctype="multipart/form-data">
+            
+            <table>
+                <tr>
+                    <td>
+                        <font>Libelle de la famille: </font>
+                    </td>
+                    <td>
+                        <input type="text" name="Ajout_Libelle" size="20" />
+                    </td>
+                </tr>
+            </table>
+            
+            <input type="submit" name="ok" value="Ajouter">
+            
+        </form>
+    </body>
+</html>
