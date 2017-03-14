@@ -13,7 +13,8 @@ use Doctrine\ORM\Mapping as ORM;
 class Medicament
 {
     /**
-     * @ORM\OneToMany(targetEntity="SiteGsbMed\GsbMedBundle\Entity\Famille", mappedBy="gsb_medicament")
+     * @ORM\ManyToOne(targetEntity="SiteGsbMed\GsbMedBundle\Entity\Famille", cascade={"persist"})
+     * @ORM\JoinColumn(nullable=false)
      */
     private $famille;
     
@@ -44,12 +45,12 @@ class Medicament
      *
      * @ORM\Column(name="MED_Nomcommercial", type="string", length=50)
      */
-    private $MEDNomcommercial;
+    private $MEDNomCommercial;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="MED_Effets", type="string", length=100)
+     * @ORM\Column(name="MED_Effets", type="string", length=255)
      */
     private $MEDEffets;
 
@@ -63,7 +64,7 @@ class Medicament
     /**
      * @var float
      *
-     * @ORM\Column(name="MED_PrixEchantillon", type="float")
+     * @ORM\Column(name="MED_PrixEchantillon", type="float", nullable=true)
      */
     private $MEDPrixEchantillon;
 
@@ -84,7 +85,7 @@ class Medicament
      * @param string $MEDDepotLegal
      * @return Medicament
      */
-    public function setMEDDepotLegal($mEDDepotLegal)
+    public function setMEDDepotLegal($MEDDepotLegal)
     {
         $this->MEDDepotLegal = $MEDDepotLegal;
     
@@ -107,9 +108,9 @@ class Medicament
      * @param string $MEDNomcommercial
      * @return Medicament
      */
-    public function setMEDNomcommercial($mEDNomcommercial)
+    public function setMEDNomCommercial($mEDNomCommercial)
     {
-        $this->MEDNomcommercial = $MEDNomcommercial;
+        $this->MEDNomCommercial = $MEDNomCommercial;
     
         return $this;
     }
@@ -119,9 +120,9 @@ class Medicament
      *
      * @return string 
      */
-    public function getMEDNomcommercial()
+    public function getMEDNomCommercial()
     {
-        return $this->MEDNomcommercial;
+        return $this->MEDNomCommercial;
     }
 
     /**
